@@ -1,0 +1,15 @@
+AMB ideas:
+- Staff recruitment and retention
+- Policy?
+
+
+R&R
+- 2 types of agent
+    - Staff
+    - Trusts
+
+Each individual has properties, parameters, and attributes
+Agents have behaviours
+
+http://www.msc-les.org/proceedings/emss/2011/EMSS2011_158.pdf
+ -- use this for ideas
