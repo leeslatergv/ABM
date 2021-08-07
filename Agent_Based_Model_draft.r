@@ -22,6 +22,13 @@ pacman::p_load(tidyverse, gdata)
 
 rm(list=ls())
 
+# Parameters
+timeframe = 3
+nPop1 = 10
+nTrust1 = 10
+
+
+# Starting data frames
 Trust1 <- data.frame(TrustNo = 1,
                      Region = "Yorkshire & the Humber",
                      Size = 5000,
@@ -36,16 +43,19 @@ Staff1 <- data.frame(StaffNo = 1,
                     Income = 0,
                     WorksForTrust = 0)
 
-# Create population of Trusts
-nTrust1 = 10
+# # Create population of Trusts
+# Create some element of wage difference between trusts
 WageOffered <- function(x){
     round(runif(1, 25000, 28000))
 }
+# Generate vacancies in trusts
 Vacanciesfunction <- function(x){
     round(runif(1, 3, 5))
 }
+# Generate some regions to draw from
 Region = c("Yorkshire & the Humber", "London & South East",
  "North West", "North East", "Midlands", "South West")
+# Now create the trusts
 for (i in 2:nTrust1) {
     Trust2 <- data.frame(TrustNo = i,
                      Region = sample(Region, 1, replace = TRUE),
@@ -57,9 +67,6 @@ for (i in 2:nTrust1) {
 }
     Trust1$TrustNo <- as.numeric(rownames(Trust1))
 
-# Create population of workers/staff
-timeframe = 3
-nPop1 = 10
 
 # Run through the recruitment cycle over 'timeframe' number of years
 for (time in 1:timeframe){
