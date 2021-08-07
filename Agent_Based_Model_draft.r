@@ -205,7 +205,7 @@ for (i in 1:(nrow(Staff1))) {
 # A year passes. For those employed...
     if (Staff1$State[i] == "Employed"){
     # Employees get between 1-3% annual national pay increase.
-    # You could get this to reflect 
+    # You could get this to reflect trusts own pay incentives too?
     Staff1$Income[i] <- round(Staff1$Income[i] * (runif(1,1.01,1.03)),0)
     # Add an extra year of experience for those who are employed
     Staff1$Experience[i] <- Staff1$Experience[i] + 1
