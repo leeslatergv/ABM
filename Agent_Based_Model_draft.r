@@ -2,11 +2,11 @@
 # 1. Firm has vacancy [x]
 # 2. Firm advertises vacancy [x]
 # 3. Individuals look at vacancy based on Motivation [x]
-# 4. If the wage offered is greater than their current one, they apply
-# 5. Firms selct three candidates with most Experience
-# 6. If number of vacancies > applicants, offer to all applicants. 
-# 7. If vacancies < applicants, offer based on motivation and experience with some random.
-# 8. Indivdiduals accept and change employer + employer has one less vacancy.
+# 4. If the wage offered is greater than their current one, they apply [x]
+# 5. Firms selct three candidates with most Experience [x]
+# 6. If number of vacancies > applicants, offer to all applicants.  [?]
+# 7. If vacancies < applicants, offer based on motivation and experience with some random. [x]
+# 8. Indivdiduals accept and change employer + employer has one less vacancy. [x]
 
 # # Retention
 # Properties
